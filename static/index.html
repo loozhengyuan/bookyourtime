@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Book Your Time
+            </h1>
+            <p class="subtitle">
+                Create a <strong>calendar invite</strong>!
+            </p>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Form -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third">
+                    <form action="/generate/" method="POST">
+                        <div class="field">
+                            <label class="label">Event Name</label>
+                            <div class="control">
+                                <input class="input" name="eventName" type="text">
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-primary">Create</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-light">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Form -->
+</body>
+
+</html>
